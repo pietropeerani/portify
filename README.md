@@ -57,7 +57,7 @@
 
 
 ## <a name="star2-about-the-project">About the project</a>
-Welcome to the Dynamic Portfolio Generator repository! This project enables you to create a fully customizable portfolio website by simply configuring a JSON file. The generator automates the process, making your portfolio available online with minimal effort.
+Welcome to the Portfolio repository! This project enables you to create a fully customizable portfolio website by simply configuring a JSON file. The generator automates the process, making your portfolio available online with minimal effort.
 
 ### <a name="space_invader-tech-stack">Tech stack</a>
 - React
