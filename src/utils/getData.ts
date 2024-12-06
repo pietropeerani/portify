@@ -30,6 +30,54 @@ export default async function getData(owner: string, repository: string): Promis
   const fileName = 'portify.config.json';
   const url = `https://api.github.com/repos/${owner}/${repository}/contents/`;
 
+  localStorage.setItem("lastVisit", JSON.stringify({
+    owner: owner,
+    repo: repository
+  }))
+
+
+  // !NOTE
+  // Uncomment the return statement during development. 
+  // If GitHub detects excessive requests, it may temporarily block API calls.
+  // return {
+  //   "name": "Peter",
+  //   "lastname": "Parker",
+  //   "roles": ["UX designer", "UI senior"],
+  //   "description": "Lorem ipsum description",
+  //   "mail": "example@example.com",
+  //   "avaible-for-works": true,
+
+  //   "contacts": [
+  //     {
+  //       "label": "GitHub",
+  //       "href": "example.com"
+  //     },
+  //     {
+  //       "label": "Mail",
+  //       "href": "mailto:example@example.com"
+  //     }
+  //   ],
+
+  //   // Works
+  //   "works-history": [
+  //     {
+  //       "position": "UX/UI designer senior",
+  //       "period": ["2023", "now"],
+  //       "company": "GitHub"
+  //     },
+  //     {
+  //       "position": "UX/UI designer senior",
+  //       "period": ["2022", "2023"],
+  //       "company": "Apple"
+  //     },
+  //     {
+  //       "position": "UX/UI designer junior",
+  //       "period": ["2020", "2022"],
+  //       "company": "Google"
+  //     }
+  //   ]
+  // }
+
   if (!owner || !repository) {
     throw new Error('Owner or repository parameters are missing.');
   }
