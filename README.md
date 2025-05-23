@@ -33,7 +33,7 @@
 </p>
    
 <h4>
-    <a href="https://github.com/pietropeerani/portify/">View Demo</a>
+    <a href="https://pietropeerani.github.io/portify/#/pietropeerani/portify">View Demo</a>
   <span> · </span>
     <a href="https://github.com/pietropeerani/portify/issues/">Report Bug</a>
   <span> · </span>
